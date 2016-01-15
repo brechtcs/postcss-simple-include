@@ -1,6 +1,8 @@
+# postcss-simple-include
+
 This is a rough proof of concept for a simple implementation of includes without using mixins. The basic functionality works, but not recommended for production use yet.
 
-# Usage
+## Usage
 
 This input:
 
@@ -41,6 +43,6 @@ This syntax is supported too:
         @include .colors, .padding;
     } 
 
-# License
+## License
 
 MIT.
