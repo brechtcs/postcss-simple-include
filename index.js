@@ -23,15 +23,15 @@ module.exports =  postcss.plugin('myplugin', function myplugin(options) {
 
 function getIncludes(rule) {
     var selectors = [];
-    rule.walkAtRules(function (atrule) {
-        if (atrule.name == 'include') {
-            var params = commaListToArray(removeSpaces(atrule.params));
+    rule.walkAtRules(function (_rule) {
+        if (_rule.name == 'include') {
+            var params = commaListToArray(removeSpaces(_rule.params));
             selectors = selectors.concat(params);
 
-            rule.removeChild(atrule);
+            rule.removeChild(_rule);
         }
     });
-            
+
     return selectors;
 }
 
