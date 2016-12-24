@@ -10,7 +10,7 @@ This input:
         background-color: white;
         color: black;
     }
-    
+
     .padding {
         padding: 1rem 0;
     }
@@ -26,7 +26,7 @@ Will generate into:
         background-color: white;
         color: black;
     }
-    
+
     .padding {
         padding: 1rem 0;
     }
@@ -41,7 +41,7 @@ This syntax is supported too:
 
     main {
         @include .colors, .padding;
-    } 
+    }
 
 ## License
 
