@@ -1,6 +1,6 @@
 # postcss-simple-include
 
-This is a rough proof of concept for a simple implementation of includes without using mixins. The basic functionality works, but not recommended for production use yet.
+Use `@include` with basic CSS classes instead of mixins.
 
 ## Usage
 
